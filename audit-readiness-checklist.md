@@ -14,7 +14,7 @@
 - [x]  Avoid using assembly as much as possible. Use of assembly increases audit times because it throws away Solidity's guardrails and must be checked much more carefully.
 - [x]  Document use of `unchecked`. Concretely describe *why* it is safe to not perform arithmetic checks on each code block. Preferably for each operation.
 - [ ]  Any `public` function that can be made `external` should be made `external`. This is not just a gas consideration, but it also reduces the cognitive overhead for auditors because it reduces the number of possible contexts in which the function can be called.
-- [ ]  Use the [Function Requirements-Effects-Interactions-Protocol Invariants (FREI-PI) pattern](https://www.nascent.xyz/idea/youre-writing-require-statements-wrong) everywhere possible. Treat all token and ETH transfers as 'interactions'. Verify your system-level protocol invariants still hold at the end of each interaction.
+- [x]  Use the [Function Requirements-Effects-Interactions-Protocol Invariants (FREI-PI) pattern](https://www.nascent.xyz/idea/youre-writing-require-statements-wrong) everywhere possible. Treat all token and ETH transfers as 'interactions'. Verify your system-level protocol invariants still hold at the end of each interaction.
 - [ ]  Have at least one trusted Solidity dev or security person outside your organization sanity check your contracts. If your code is a tire fire and in need of major changes, you want to hear about that early and from a trusted friend (for free) rather than after an expensive audit.
 
 

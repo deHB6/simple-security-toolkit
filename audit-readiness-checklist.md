@@ -23,7 +23,7 @@
 - [ ]  Use formal verification tools to verify the invariants, but be aware that -- in practice -- current formal verification tools aren't a silver bullet and have some edge cases that aren't handled. [Certora](https://www.certora.com/) and [Runtime Verification](https://runtimeverification.com/) are examples of commonly used (paid) tools in this category.
 - [x]  Write down your extraneous security assumptions. This doesn't have to be super formal. E.g., "We assume that the `owner` is not malicious, that the Chainlink oracles won't lie about the token price, that the Chainlink oracles will always report the price at least once every 24 hours, that all tokens that the `owner` approves are ERC20-compliant tokens with no transfer hooks, and that there will never be a chain reorg of more than 30 blocks." This helps you understand how things could possibly go wrong *even if your contracts are bug-free*. Good auditors will be able to help you understand you whether your assumptions are realistic. They may also be able point out assumptions you're making that you didn't realize you were making.
 - [x]  If you're unsure about something in your own code, or there are areas where you'd like auditors to spend more time, make a list of these to share with the auditors.
-- [ ]  Add scoping details for auditors. The form used in preparation for [Code4rena](https://code4rena.com/) is provided as an example in the collapsible section below.
+- [x]  Add scoping details for auditors. The form used in preparation for [Code4rena](https://code4rena.com/) is provided as an example in the collapsible section below.
 <details> <summary>Audit Scoping Details</summary>
   
   - If you have a public code repo, please share it here:
